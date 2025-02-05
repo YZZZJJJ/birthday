@@ -1,0 +1,59 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: black;
+    cursor: crosshair;
+}
+
+.container1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.firework {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    animation: explode 0.5s ease-in-out;
+}
+
+@keyframes explode {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+.fragment {
+    position: absolute;
+    width: 10px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: white;
+    animation: fragmentFall 1s ease-in-out;
+}
+
+@keyframes fragmentFall {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(1000px) rotate(360deg);
+        opacity: 0;
+    }
+}
