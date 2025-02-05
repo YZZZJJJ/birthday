@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登陆页面</title>
+    <link rel="stylesheet" href="style.css">    
+         
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+        <h1>登录</h1>
+        
+    </div>
+    <div class="main">
+        <form onsubmit="checklogin(event)"><!-- 表单提交时触发checklogin函数 -->
+            <span>
+                <label for="username">用户名:</label>
+                <input type="text" id="username" placeholder="请输入用户名" required>
+            </span><br>
+            <span>
+                <label for="password">密码:</label>
+                <input type="password" id="password"  placeholder="tip:birthday" required>
+            </span><br>
+            <div>
+                <button type="submit">登录</button>
+            </div>
+        </form>
+    </div>
+    <script>
+        function checklogin(event) {
+            event.preventDefault(); 
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            if(username !== "孔维嘉颖" ){
+                alert("用户名不正确");  
+                return
+            }
+            else if( password !== "20051110"){
+                alert("密码不正确");
+                return
+            }else{
+                alert("登录成功");
+                window.location.href = "http://www.baidu.com" 
+            }
+
+            }
+        
+    </script>
+</body>
+</html>

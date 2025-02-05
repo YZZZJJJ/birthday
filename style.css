@@ -1,0 +1,64 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: url(./微信图片_20241223115113.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+.container{
+    max-width: 380px;
+    margin: 50% auto;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0 , 0.1);
+    box-shadow: 0 0 17px #333333;
+}
+.header{
+    text-align: center;
+    padding-top: 75px;
+    font-size: 20px;
+}
+.header h1{
+    color:rgb(235, 239, 216);
+    font-size: 45px;
+    margin-bottom: 80px;
+    }
+.main{
+    padding: 20px;
+    text-align: center;
+    }
+.main input,button{
+    
+    width: 300px;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding-left: 60px;
+    box-sizing: border-box;
+    font-size: 15px;
+    color:#80571b;
+    margin-bottom: 40px;
+}
+.main button{
+    padding-left: 0;
+    background-color: rgb(184, 161, 133);
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-bottom: 70px;
+}
+.main button:hover{
+    box-shadow: 2px 2px 5px #efb30c;
+    background-color: #d68f24;
+}
+.main input:hover{
+    box-shadow: 2px 2px 5px #e8b015;
+    background-color: #f1eee7;
+}
+.main span{
+    position: relative;
+}
+.main label{
+    position: absolute;
+    top: 0px;
+    left: 5px;
+    font-size: 15px;
+    color: #705b2f;
+}
