@@ -12,7 +12,7 @@ function checklogin(event) {
             }else{
                 alert("登录成功");
                 window.location.href = "http://www.baidu.com" 
-            }
+}
 function createFirework(x, y) {
     const firework = document.createElement('div');
     firework.classList.add('firework');
